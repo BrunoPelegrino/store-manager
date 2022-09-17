@@ -3,13 +3,13 @@ const { productsService } = require('../services');
 
 const products = async (_req, res) => {
   const { type, message } = await productsService.getProducts();
-  if (type) return res.status(type).json(message);
-  res.status(201).json(message);
+  if (type) return res.status(type).json({ message });
+  res.status(200).json(message);
 };
 
 const productsById = async (req, res) => {
-  const { productId } = req.params;
-  const { type, message } = await productsService.getProductById(productId);
+  const { id } = req.params;
+  const { type, message } = await productsService.getProductById(id);
 
   if (type) return res.status(type).json({ message });
 
