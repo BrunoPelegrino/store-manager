@@ -7,6 +7,16 @@ const products = async (_req, res) => {
   res.status(201).json(message);
 };
 
+const productsById = async (req, res) => {
+  const { id } = req.params;
+  const { type, message } = await productsService.getProductById(id);
+
+  if (type) return res.status(type).json({ message });
+
+  res.status(200).json(message);
+};
+
 module.exports = {
   products,
+  productsById,
 };
