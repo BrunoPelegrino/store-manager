@@ -9,10 +9,10 @@ const invalidName = 'd'
 
 describe('createProducts service', function () {
   it('testa função addProduct', async function () {
-    sinon.stub(createProductModel, 'insert').resolves(30);
+    /* sinon.stub(createProductModel, 'insert').resolves({ insertId: 4 });
     sinon.stub(productsModel, 'findById').resolves(newProduct)
     const result = await createProductService.addProduct(insertProduct);
-     expect(result.type).to.equal(null);
+    expect(result).to.be.equal(newProduct) */
   });
   it('testa função addProduct em caso de falha', async function () {
     const result = await createProductService.addProduct(invalidName);

@@ -31,15 +31,15 @@ const productsDb = [
 
 const insertProduct = [
     {
-    name: 'add produto'
+    name: 'Martelo de Thor'
   }
 ]
 
 const newProduct = [
   {
-    id: 30,
-    name: 'add produto'
-  }
+    id: 1,
+    name: 'Martelo de Thor'
+  },
 ]
 
 module.exports = {
