@@ -28,8 +28,16 @@ const productsDb = [
   }
 ]
 
+const newProduct = [
+  {
+    id: 4,
+    name: 'add produto'
+  }
+]
+
 
 module.exports = {
   products,
-  productsDb
+  productsDb,
+  newProduct,
 };
