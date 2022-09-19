@@ -3,7 +3,7 @@ const sinon = require('sinon');
 const sinonChai = require('sinon-chai');
 const { productsController } = require('../../../src/controllers');
 const { productsService } = require('../../../src/services');
-const { products, productsDb } = require('./mocks/products.controller.mocks');
+const { products } = require('./mocks/products.controller.mocks');
 
 const { expect } = chai;
 chai.use(sinonChai);
