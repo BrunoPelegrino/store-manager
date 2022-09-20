@@ -7,7 +7,7 @@ const getProducts = async () => {
 
 const getProductsById = async (id) => {
   const result = await productsModel.findById(id);
-    if (!result) return { type: 404, message: 'Product not found' };
+  if (!result) return { type: 404, message: 'Product not found' };
   return { type: null, message: result };
 };
 
