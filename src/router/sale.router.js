@@ -4,6 +4,6 @@ const { validateId, validateQauntity } = require('../middlewares/validateSale');
 
 const router = express.Router();
 
-router.post('/', validateId, validateQauntity, saleController.newSale);
+router.post('/', validateQauntity, validateId, saleController.newSale);
 
 module.exports = router;
