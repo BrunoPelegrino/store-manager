@@ -4,13 +4,18 @@
     "colId": "history",
     "containerId": "",
     "name": "http://localhost:3000/products",
-    "url": "http://localhost:3000/products/5",
-    "method": "GET",
+    "url": "http://localhost:3000/products/1",
+    "method": "PUT",
     "sortNum": 0,
     "created": "2022-09-17T16:42:52.758Z",
-    "modified": "2022-09-19T16:19:01.195Z",
+    "modified": "2022-09-20T20:11:55.383Z",
     "headers": [],
     "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"name\": \"xabalue\"\n}",
+      "form": []
+    },
     "tests": []
   },
   {
@@ -18,11 +23,11 @@
     "colId": "history",
     "containerId": "",
     "name": "http://localhost:3000/products/",
-    "url": "http://localhost:3000/sales",
+    "url": "http://localhost:3000/sales/",
     "method": "POST",
     "sortNum": 0,
     "created": "2022-09-19T19:03:12.408Z",
-    "modified": "2022-09-20T02:58:14.420Z",
+    "modified": "2022-09-20T19:41:01.564Z",
     "headers": [],
     "params": [],
     "body": {
