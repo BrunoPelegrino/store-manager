@@ -2,7 +2,7 @@ const { saleModel, productsModel } = require('../models');
 
 const createSale = async (productId, quantity) => {
   const newSaleId = await saleModel.insertSale();
-  const [newSale] = await saleModel.insertSaleProducts({ productId, quantity });
+  const newSale = await saleModel.insertSaleProducts(productId, quantity);
 
   const findById = await Promise.all(newSale.map((id) => productsModel.findById(id)));
   
