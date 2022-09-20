@@ -13,8 +13,8 @@ const createSale = async (sales) => {
 const insert = async (sales) => {
   const newSale = await createSale(sales);
   if (newSale) return newSale;
-
-  const newSaleId = await saleModel.insertSales();
+ 
+  const newSaleId = await saleModel.insertSale();
   await saleModel.insertSaleProducts(sales, newSaleId);
 
   return { type: null, message: { id: newSaleId, itemsSold: sales } };
